@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap');
 
-:root {
-  --bg-color: #121619;
-  --card-bg: #1E2328;
-  --text-main: #F4F6F8;
-
 }
 
 
@@ -13,16 +8,12 @@ body {
   color: var(--text-main);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
 
 nav {
   background-color: var(--card-bg);
   padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -32,8 +23,6 @@ nav a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  margin-left: 1.5rem;
-  transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -48,36 +37,29 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: auto
+  margin-bottom: auto;
 }
 
 
 .home-page {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  max-width: auto;
   text-align: center;
 }
 
 .home-page h1 {
   color: var(--accent-ice);
-  margin-bottom: 1.5rem;
+
 }
 
 .home-page p {
-  font-size: 1.1rem;
+  font-size: 1.1;
   color: #D1D5DB;
   max-width: 700px;
-  margin: 0 auto 1.5rem auto;
 }
 
 
 .home-page img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  margin-top: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
