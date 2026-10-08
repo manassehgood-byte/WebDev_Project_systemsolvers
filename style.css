@@ -63,3 +63,20 @@ h1 {
   max-width: 100%;
   height: auto;
 }
+
+.about-page p{
+  font-size: 1.1;
+  color: #D1D5DB;
+  max-width: 700px;
+}
+.about-page h1 {
+  color: var(--accent-ice);
+
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--text-main);
+}
+  
