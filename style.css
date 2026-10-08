@@ -1,0 +1,48 @@
+
+
+body.home-page {
+    background-color: rgb(220, 220, 38);
+    body h1 {
+        color: #2c3e50;
+        text-align: center;
+    }
+}
+
+
+
+body h1 {
+    font-family: Georgia, sans-serif;
+    background-color: #b64a44;
+}
+
+
+nav {
+    background-color: rgb(62, 220, 38);
+}
+
+nav a {
+    color: rgb(62, 220, 38);
+    text-decoration: none;
+   
+}
+
+
+body.home-page {
+    background-color: rgb(220, 220, 38);
+}
+
+body.home-page h1 {
+    color: #2c3e50;
+    text-align: center;
+
+}
+
+
+body.about-page {
+    background-color: rgb(62, 220, 38);
+}
+
+body.about-page h1 {
+    color: #e74c3c;
+    font-style: italic;
+}
