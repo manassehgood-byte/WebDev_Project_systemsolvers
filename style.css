@@ -30,7 +30,7 @@ nav a:hover {
 }
 
 
-h1, h2, h3, h4 {
+h1,  {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: var(--text-main);
@@ -42,39 +42,39 @@ h1 {
 }
 
 
-.home-page {
+h1{
   max-width: auto;
   text-align: center;
 }
 
-.home-page h1 {
+ h1 {
   color: var(--accent-ice);
 
 }
 
-.home-page p {
+ h1 {
   font-size: 1.1;
   color: #D1D5DB;
   max-width: 700px;
 }
 
 
-.home-page img {
+img {
   max-width: 100%;
   height: auto;
 }
 
-.about-page p{
+h1{
   font-size: 1.1;
   color: #D1D5DB;
   max-width: 700px;
 }
-.about-page h1 {
+ h1 {
   color: var(--accent-ice);
 
 }
 
-h1, h2, h3, h4 {
+h1,{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: var(--text-main);
