@@ -17,18 +17,18 @@ body h1 {
 
 
 nav {
-    background-color: rgb(62, 220, 38);
+    background-color: rgb(220, 220, 38);
 }
 
 nav a {
-    color: rgb(62, 220, 38);
+    color: rgb(0,0,0);
     text-decoration: none;
    
 }
 
 
 body.home-page {
-    background-color: rgb(220, 220, 38);
+    background-color: rgb(255, 0, 0);
 }
 
 body.home-page h1 {
