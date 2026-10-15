@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap');
 
-}
-
-
+/* --- Base Styles --- */
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
@@ -10,7 +8,7 @@ body {
   line-height: 1.6;
 }
 
-
+/* --- Navigation --- */
 nav {
   background-color: var(--card-bg);
   padding: 1rem 2rem;
@@ -29,54 +27,24 @@ nav a:hover {
   color: var(--accent-ice);
 }
 
-
-h1,  {
+/* --- Typography & Headings --- */
+h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: var(--text-main);
-}
-
-h1 {
-  font-size: auto
-  margin-bottom: auto;
-}
-
-
-h1{
-  max-width: auto;
-  text-align: center;
-}
-
- h1 {
+  font-size: 2.2rem;
   color: var(--accent-ice);
-
-}
-
- h1 {
-  font-size: 1.1;
-  color: #D1D5DB;
   max-width: 700px;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-
+/* --- Media --- */
 img {
   max-width: 100%;
   height: auto;
 }
 
-h1{
-  font-size: 1.1;
-  color: #D1D5DB;
-  max-width: 700px;
-}
- h1 {
-  color: var(--accent-ice);
 
-}
 
-h1,{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: var(--text-main);
-}
+
   
