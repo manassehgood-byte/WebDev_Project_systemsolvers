@@ -80,7 +80,7 @@ p {
   padding: 1.5rem;                     
   margin: 2rem auto;                   
   border: 2px solid var(--accent-ice);  
-  background-color: var(--card-bg);
+  background-color:rgb(54, 117, 136);
   border-radius: 8px;
 }
 
@@ -92,11 +92,9 @@ img {
   margin: 1.5rem auto;
   display: block;
 }
-.box {
 
-background-color:rgb(54, 117, 136); 
-}
-  
+
+
 
 
   
