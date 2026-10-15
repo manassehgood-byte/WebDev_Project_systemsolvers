@@ -1,50 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap');
 
+/* --- Root Color Variables --- */
+:root {
+  --bg-color: #0d1117;
+  --card-bg: #161b22;
+  --text-main: #f0f6fc;
+  --text-muted: #8b949e;
+  --accent-ice: #58a6ff;
+  --accent-alert: #ff7b72;
+}
+
 /* --- Base Styles --- */
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-/* --- Navigation --- */
+/* --- Navigation Bar --- */
 nav {
   background-color: var(--card-bg);
-  width: 100%;                  /* 1. Width */
-  height: 70px;                 /* 2. Height */
-  padding: 1rem 2rem;           /* 3. Padding */
-  margin: 0 0 2rem 0;           /* 4. Margin */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 5. Border */
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
-  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
+
 nav a {
   color: var(--text-main);
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
   color: var(--accent-ice);
 }
 
-/* --- Typography & Headings --- */
+/* --- Headings & Paragraphs --- */
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 2.2rem;
   color: var(--accent-ice);
-  max-width: 700px;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-/* --- Media --- */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+}
+
+/* --- Alert Text --- */
+.status-alert {
+  color: var(--accent-alert);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --- Task 2: The CSS Box Model Element --- */
+.box {
+  width: 80%;                           /* 1. Width */
+  max-width: 650px;
+  min-height: 120px;                   /* 2. Height */
+  padding: 1.5rem;                     /* 3. Padding */
+  margin: 2rem auto;                   /* 4. Margin (Centers the box) */
+  border: 2px solid var(--accent-ice);  /* 5. Border */
+  background-color: var(--card-bg);
+  border-radius: 8px;
+}
+
+/* --- Responsive Images --- */
 img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
 }
 
 
