@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap');
 
-/* --- Root Color Variables --- */
+
 :root {
   --bg-color: #0d1117;
   --card-bg: #161b22;
@@ -10,7 +10,7 @@
   --accent-alert: #ff7b72;
 }
 
-/* --- Base Styles --- */
+
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
@@ -21,7 +21,7 @@ body {
   text-align: center;
 }
 
-/* --- Navigation Bar --- */
+
 nav {
   background-color: var(--card-bg);
   padding: 1rem 2rem;
@@ -43,7 +43,7 @@ nav a:hover {
   color: var(--accent-ice);
 }
 
-/* --- Headings & Paragraphs --- */
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -63,26 +63,26 @@ p {
   font-size: 1.1rem;
 }
 
-/* --- Alert Text --- */
+
 .status-alert {
   color: var(--accent-alert);
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* --- Task 2: The CSS Box Model Element --- */
+
 .box {
-  width: 80%;                           /* 1. Width */
+  width: 80%;                           
   max-width: 650px;
-  min-height: 120px;                   /* 2. Height */
-  padding: 1.5rem;                     /* 3. Padding */
-  margin: 2rem auto;                   /* 4. Margin (Centers the box) */
-  border: 2px solid var(--accent-ice);  /* 5. Border */
+  min-height: 120px;                   
+  padding: 1.5rem;                     
+  margin: 2rem auto;                   
+  border: 2px solid var(--accent-ice);  
   background-color: var(--card-bg);
   border-radius: 8px;
 }
 
-/* --- Responsive Images --- */
+
 img {
   max-width: 90%;
   height: auto;
