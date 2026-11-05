@@ -4,9 +4,10 @@
   --bg-color: #0d1117;
   --card-bg: #161b22;
   --text-main: #f0f6fc;
-  --text-muted: #8b949e;
+  --text-muted: #c9d1d9;
   --accent-ice: #58a6ff;
   --accent-alert: #ff7b72;
+  --focus-ring: #ff9900;
 }
 
 /* Base accessibility & dark theme setup */
@@ -14,10 +15,31 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: 'Inter', Arial, Verdana, sans-serif;
-  line-height: 1.6;
+  font-size: 18px; /* Larger base size helps users with dyslexia and visual impairment */
+  line-height: 1.7;
   margin: 0;
   padding: 0;
-  text-align: left;
+  text-align: left; /* Avoid justified text for dyslexia */
+}
+
+/* Skip link - visible only on keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: var(--accent-ice);
+  color: #000;
+  padding: 0.75rem 1.25rem;
+  z-index: 1000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 /* Page background custom styling */
@@ -29,7 +51,7 @@ body {
   background-attachment: fixed;
 }
 
-/* Navigation layout */
+/* Navigation layout - consistent across pages */
 nav {
   background-color: var(--card-bg);
   padding: 1rem 2rem;
@@ -41,7 +63,7 @@ nav {
 
 nav a {
   color: var(--text-main);
-  text-decoration: underline;
+  text-decoration: underline; /* Do not rely on colour alone */
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
@@ -50,8 +72,13 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--accent-ice);
-  outline: 3px solid #ff9900;
   font-weight: bold;
+}
+
+/* Strong visible focus for keyboard users - high contrast ring */
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
 }
 
 /* Typography */
@@ -60,6 +87,7 @@ h1 {
   font-weight: 700;
   color: var(--accent-ice);
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -69,18 +97,20 @@ h2 {
 
 p {
   color: var(--text-muted);
-  max-width: 600px;
+  max-width: 650px;
   margin: 1rem auto;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .status-alert {
   color: var(--accent-alert);
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: underline; /* Extra cue beyond colour for colour-blind users */
+  letter-spacing: 0.03em;
 }
 
-/* Container & Box styles */
+/* Container & Box styles - consistent layout */
 .box {
   width: 80%;
   max-width: 650px;
@@ -101,8 +131,3 @@ img {
   margin: 1.5rem auto;
   display: block;
 }
-
-
-
-
-  
